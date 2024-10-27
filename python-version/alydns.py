@@ -79,7 +79,7 @@ class AliDns:
         #utc_tz = pytz.timezone('UTC')
         #time = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
         #time = datetime.datetime.now(tz=utc_tz).strftime('%Y-%m-%dT%H:%M:%SZ')
-        time = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+        time = datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%dT%H:%M:%SZ')
         return time
 
     @staticmethod
